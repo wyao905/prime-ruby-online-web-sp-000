@@ -2,16 +2,16 @@
 def prime?(num)
   i = 2
   if num == 2 || num == 3
-    true
-  elsif num < 2
-    false
+    return true
+  elsif num <= 1
+    return false
   else
     while i < num
       if num % i == 0
-        false
+        return false
       end
       i += 1
     end
-    true
+    return true
   end
 end
