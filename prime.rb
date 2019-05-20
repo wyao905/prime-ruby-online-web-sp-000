@@ -9,6 +9,7 @@ def prime?(num)
         if num % (i * i) == 0
           false
         end
+        i += 1
       end
       true
     else
