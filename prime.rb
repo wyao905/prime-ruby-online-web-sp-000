@@ -9,13 +9,6 @@ def prime?(num)
       while i < num
         if num % i == 0
           false
-        else
-          collect << i
-          collect.each do |test_num|
-            if num % test_num == 0
-              false
-            end
-          end
         end
         i += 1
       end
