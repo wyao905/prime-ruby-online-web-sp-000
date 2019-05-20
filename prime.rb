@@ -5,4 +5,4 @@ def prime?(num)
     collect << num
     collect.each do |test_num|
       if num % (test_num * test_num) == 0
-        
+        collect.delete(test_num)
