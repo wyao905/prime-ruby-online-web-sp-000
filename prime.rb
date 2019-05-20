@@ -1,7 +1,7 @@
 # Add  code here!
 def prime?(num)
   i = 3
-  if num == 2
+  if num == 2 || num == 3
     true
   elsif num > 1
     if ((num + 1) % 6 == 0 || (num - 1) % 6 == 0) && (num % 5 != 0)
