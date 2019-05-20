@@ -1,6 +1,9 @@
 # Add  code here!
 def prime?(num)
-  if num != 1
+  i = 3
+  if num == 2
+    true
+  elsif num > 1
     if ((num + 1) % 6 == 0 || (num - 1) % 6 == 0) && (num % 5 != 0)
       while i < num
         if num % (i * i) == 0
@@ -11,8 +14,6 @@ def prime?(num)
     else
       false
     end
-  elsif num == 2
-    true
   else
     false
   end
